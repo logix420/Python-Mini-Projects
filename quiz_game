@@ -1,0 +1,45 @@
+###A simple quiz game in Python###
+print("Welcome to my computer quiz!")
+
+playing = input("Do you want to play? ").lower()
+
+if   playing != "yes":
+    quit()
+
+print("Okay! Let's play :)")
+score = 0
+
+answer = input("What does CPU stand for? ")
+if answer.lower() == "central processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The correct answer is 'Central Processing Unit'.")
+
+answer = input("What does GPU stand for? ")
+if answer.lower() == "graphics processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The correct answer is 'Graphics Processing Unit'.")
+
+answer = input("What does RAM stand for? ")
+if answer.lower() == "random access memory":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The correct answer is 'Random Access Memory'.")
+
+answer = input("What does SSD stand for? ")
+if answer.lower() == "solid state drive":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect! The correct answer is 'Solid State Drive'.")
+
+print("You have completed the quiz! Thanks for playing :)")
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score/4) * 100)+ "%.")
+print("Goodbye!")
+# End of the quiz game
+# Note: The score is hardcoded as 4 since all questions are answered correctly in this example.    
